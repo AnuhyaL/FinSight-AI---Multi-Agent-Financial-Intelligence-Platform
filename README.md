@@ -63,24 +63,6 @@ cd frontend && npm run build
 
 Tests cover PDF extraction, agents, forecasting, API health, and missing-report RAG behavior. Add API-key integration tests separately in CI secrets.
 
-## Deployment
 
-### Backend - Render
 
-Push this repository to GitHub, create a Render Blueprint from `render.yaml`, then set `GROQ_API_KEY` and `CORS_ORIGINS` to the Vercel URL. Render’s ephemeral filesystem means report/vector persistence should move to object storage and managed Chroma/Postgres for production multi-instance deployments.
 
-### Frontend - Vercel
-
-Import the repository, set the project root to `frontend`, build command to `npm run build`, output directory to `dist`, and add `VITE_API_BASE_URL=https://<render-service>.onrender.com`.
-
-## Troubleshooting
-
-- **CORS error:** set `CORS_ORIGINS` exactly to the frontend origin.
-- **Chat says report missing:** upload the PDF to the same backend instance first.
-- **Model download or memory issue:** set a smaller embedding model; the FinBERT fallback remains available.
-- **Prophet install issue:** use Python 3.11 and upgrade pip before installing requirements.
-- **No text in PDF:** upload a text-based report or add OCR before ingestion.
-
-## Recruiter project summary
-
-FinSight AI demonstrates production-oriented AI engineering: grounded retrieval with citations, provider-resilient LLM integration, LangGraph orchestration, interpretable financial scoring, asynchronous-safe FastAPI boundaries, a polished responsive frontend, tests, deployment manifests, and operational configuration. Screenshots can be added here after deployment.
