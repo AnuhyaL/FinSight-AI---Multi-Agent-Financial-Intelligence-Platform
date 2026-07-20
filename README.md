@@ -1,6 +1,6 @@
 # FinSight AI - Multi-Agent Financial Analyst
 
-FinSight AI is a portfolio-ready financial-intelligence platform that turns annual reports into cited answers, transparent risk scoring, revenue forecasts, sentiment signals, investment recommendations, and competitor comparisons. It is an analytical aid—not financial advice.
+FinSight AI is a portfolio-ready financial-intelligence platform that turns annual reports into cited answers, transparent risk scoring, revenue forecasts, sentiment signals, investment recommendations, and competitor comparisons. It is an analytical aid not financial advice.
 
 ## Architecture and capabilities
 
