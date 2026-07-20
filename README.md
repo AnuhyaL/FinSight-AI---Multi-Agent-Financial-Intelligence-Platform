@@ -1,4 +1,4 @@
-# FinSight AI — Multi-Agent Financial Analyst
+# FinSight AI - Multi-Agent Financial Analyst
 
 FinSight AI is a portfolio-ready financial-intelligence platform that turns annual reports into cited answers, transparent risk scoring, revenue forecasts, sentiment signals, investment recommendations, and competitor comparisons. It is an analytical aid—not financial advice.
 
@@ -65,11 +65,11 @@ Tests cover PDF extraction, agents, forecasting, API health, and missing-report 
 
 ## Deployment
 
-### Backend — Render
+### Backend - Render
 
 Push this repository to GitHub, create a Render Blueprint from `render.yaml`, then set `GROQ_API_KEY` and `CORS_ORIGINS` to the Vercel URL. Render’s ephemeral filesystem means report/vector persistence should move to object storage and managed Chroma/Postgres for production multi-instance deployments.
 
-### Frontend — Vercel
+### Frontend - Vercel
 
 Import the repository, set the project root to `frontend`, build command to `npm run build`, output directory to `dist`, and add `VITE_API_BASE_URL=https://<render-service>.onrender.com`.
 
